@@ -1,0 +1,52 @@
+//grid
+@mixin grid($grid) {
+  $totalWidth: 0;
+  @each $className, $width in $grid {
+    $totalWidth: $totalWidth + $width;
+  }
+  @each $className, $width in $grid {
+    .#{$className} {
+      width: (#{$width / $totalWidth * 100})#{%};
+    }
+  }
+}
+
+
+
+//layout vars
+$container-width: 940px;
+$footer-heght: 50px;
+
+//colors
+$grey: #727272;
+$dark-grey: #646464;
+$black: #414141;
+$white: #ffffff;
+$grey-white: #f6f6f6;
+$blue: #33c1e3;
+$red: #e85f61;
+
+
+//layout
+@import "layout/normalize.scss";
+@import "layout/font-awesome.scss";
+@import "layout/animate.scss";
+@import "layout/fonts.scss";
+@import "layout/adjustment.scss";
+@import "layout/common-blocks.scss";
+
+//section
+@import "section/index.scss";
+@import "section/header.scss";
+@import "section/content.scss";
+@import "section/sidebar.scss";
+@import "section/about.scss";
+@import "section/career.scss";
+@import "section/portfolio.scss";
+@import "section/footer.scss";
+
+//media
+@import "media/desktop.scss";
+@import "media/laptops";
+@import "media/tablets.scss";
+@import "media/phones.scss";

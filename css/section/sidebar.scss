@@ -1,0 +1,26 @@
+/*----------------------------------------*\
+    #SECTION SIDEBAR
+\*----------------------------------------*/
+.menu__link {
+    display: block;
+    font-size: 18px;
+    text-align: right;
+    padding: 10px 25px 10px;
+    border-right: 6px solid #f6f6f6;
+    &_active {
+        color: #32c4e6;
+        border-right: 6px solid #32c4e6;
+        font-family: "fira_sansbold", "Helvetica", sans-serif;
+    }
+
+    &:hover {
+        color: #32c4e6;
+    }
+
+}
+
+.menu__icon, .menu__title  {
+    display: inline-block;
+    margin-right: 2px;
+}
+

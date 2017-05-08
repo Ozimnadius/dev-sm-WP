@@ -1,0 +1,28 @@
+/*------------------#SECTION-COMMON----------------------*/
+
+//title
+.title {
+  font-size: 35px;
+  font-family: "fira_sansmedium", "Helvetica", sans-serif;
+}
+
+//button
+.button {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #414141;
+    border-radius: 30px;
+  }
+
+  &__icon, &__title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,17 @@
+/*------------------#SECTION-CONTENT----------------------*/
+
+$main: (sidebar: 220, shadow-block:20, page-content: 700);
+@include grid($main);
+
+.page-content {
+  font-size: 0;
+}
+
+.content__sidebar {
+  float: left;
+  margin-right: 20px;
+}
+
+.content__page-content {
+  float: left;
+}

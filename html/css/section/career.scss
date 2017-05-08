@@ -1,0 +1,146 @@
+/*----------------------------------------*\
+    #SECTION CAREER
+\*----------------------------------------*/
+$careerContent: (career__left: 260, career__right: 440);
+@include grid($careerContent);
+
+.career__left, .career__right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*img*/
+
+
+/*career*/
+.career__title {
+  margin-bottom: 15px;
+}
+
+.career__img {
+  max-width: 220px;
+  max-height: 220px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.career-foto {
+  display: block;
+  max-width: 100%;
+}
+
+/*description*/
+
+.career__item {
+  text-align: right;
+  position: relative;
+  padding-left: 60px;
+}
+
+.career__item:hover {
+  cursor: pointer;
+}
+
+.career__item:hover .career__block {
+  background: #33c1e3;
+}
+
+.career__item:hover * {
+  color: #ffffff;
+}
+
+.career__item:hover .career__date {
+  color: #33c1e3;
+  font-weight: bold;
+}
+
+.career__item:hover .career__date:after {
+  border-color: #94e0f2;
+}
+
+.career__item:first-child .career__block:before,
+.career__item:last-child .career__block:after {
+  display: none;
+}
+
+
+.career__block {
+  width: 380px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+
+}
+
+.career__block:after,
+.career__block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  background: #dddddd;
+  left: -20px;
+}
+
+.career__block:before {
+  top: 0;
+  bottom: 50%;
+}
+
+.career__block:after {
+  bottom: -22px;
+  top: 50%;
+}
+
+.career__job {
+  font-size: 21px;
+  font-family: "fira_sansregular", "Helvetica", sans-serif;
+  color: #5a5a5a;
+}
+
+.career__profession,
+.career__period,
+.career__date {
+  font-size: 18px;
+  color: #727272;
+  font-family: "fira_sanslight", "Helvetica", sans-serif;
+}
+
+.career__date {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  line-height: 28px;
+  margin-top: -14px;
+  margin-right: 34px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #33c1e3;
+    border-radius: 50%;
+    border: 5px solid #f6f6f6;
+    margin-top: -10px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    z-index: 2;
+  }
+}
+
+
+
+
+
+
+

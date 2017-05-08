@@ -1,0 +1,159 @@
+/*------------------#SECTION-TABLETS----------------------*/
+
+@media screen and (max-width: 768px) {
+  .wrapper:after {
+    content: "";
+    display: block;
+    height: 100px;
+  }
+
+  .container {
+    max-width: 480px;
+  }
+
+  //header
+  .header__left {
+    width: 75%;
+  }
+  .header__right {
+    width: 25%;
+  }
+
+  .header__contacts {
+    margin-top: 20px;
+  }
+
+  .contacts__link {
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+
+  .contacts__icon {
+    display: inline-block;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+
+  .contacts:hover .contacts__dropdown {
+    left: 0;
+  }
+
+  .contacts__dropdown-tiangle {
+    left: 90%;
+  }
+
+  //about
+  .about__left,
+  .about__right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about__left {
+    margin-bottom: 10px;
+  }
+
+  .about__right {
+    text-align: center;
+  }
+
+  .about__title {
+    margin: 0;
+  }
+
+  .desription {
+    padding: 0 18px;
+  }
+
+  .about__button {
+    display: inline-block;
+    float: none;
+  }
+
+  //  career
+  .career {
+    &__left,
+    &__right,
+    &__top {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__img {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      padding: 0 20px;
+    }
+
+    &__block {
+      width: 100%;
+    }
+
+    &__date,
+    &__block:after, &__block:before {
+      display: none;
+    }
+  }
+
+  //  portfolio
+  .portfolio {
+    &__title {
+      text-align: center;
+      margin-top: -25px;
+    }
+
+    &__list {
+      margin-right: -2.5%;
+    }
+
+    &__item {
+      width: 47.5%;
+      margin-right: 2.5%;
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+      &:nth-child(3n+3) {
+        margin-right: 2.5%;
+      }
+    }
+
+    &__item-title {
+      font-size: 24px;
+    }
+
+    &__item-desc {
+      font-size: 16px;
+    }
+
+    &__type {
+      font-family: 'fira_sansbold', 'Helvetica', sans-serif;
+      font-size: 16px;
+    }
+  }
+
+
+
+  //  footer
+  .footer {
+    height: 100px;
+    margin-top: -100px;
+
+    &__left,
+    &__right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+}

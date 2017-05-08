@@ -1,0 +1,113 @@
+/*------------------#SECTION-MEDIA-PHONES----------------------*/
+
+@media screen and (max-width: 480px) {
+
+  .container {
+    width: 95%;
+    min-width: 320px;
+  }
+
+  .wrapper__auth {
+    min-width: 320px;
+  }
+
+  //header
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .user__title {
+    max-width: 150px;
+    font-size: 14px;
+    width: 40%;
+  }
+
+  .contacts {
+    display: inline-block;
+    &:hover .contacts__dropdown {
+      left: -200%;
+    }
+
+    &__dropdown-tiangle {
+      left: 77%;
+    }
+  }
+
+  //  about
+  //  about-sidebar
+  .about__left {
+    margin-bottom: 5px;
+  }
+
+  .sidebar {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .menu__title {
+    margin: 0;
+  }
+
+  .menu__icon {
+    display: none;
+  }
+
+  .about__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  //about-title
+  .desription {
+    padding: 0;
+    font-size: 16px;
+    font-family: 'fira_sanslight', 'Helvetica', sans-serif;
+    height: auto;
+  }
+
+  //portfolio
+  .portfolio {
+    margin-top: 46px;
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  //index
+  .auth {
+    width: 300px;
+    height: 216px;
+    &__top {
+      height: 150px;
+    }
+    &__bottom {
+      height: 82px;
+    }
+    &__img {
+      width: 110px;
+      height: 110px;
+    }
+  }
+
+  .button__title_index {
+    //font-size: 13px;
+  }
+
+
+  //  footer
+  .socials {
+    margin-top: 5px;
+  }
+
+}
